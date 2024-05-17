@@ -25,11 +25,13 @@ def put(word, list):
         list[empty_i] = word    
     
     return [empty_i, list]
-    
+
 
 def remove(word, list):
     rems = 0
     for item in list:
         if item == word:
             rems += 1
-    return rems
+            del list[list.index(word)] 
+    return [rems, list]
+
