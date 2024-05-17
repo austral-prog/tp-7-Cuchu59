@@ -18,8 +18,13 @@ def index_of(word, list):
     return index
 
 
+
 def put(word, list):
-    return index_of_empty(list)
+    empty_i = index_of_empty(list)
+    if empty_i != -1:
+        list[empty_i] = word    
+    
+    return [empty_i, list]
     
 
 def remove(word, list):
