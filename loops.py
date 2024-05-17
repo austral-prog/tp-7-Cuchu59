@@ -32,6 +32,6 @@ def remove(word, list):
     for item in list:
         if item == word:
             rems += 1
-            del list[list.index(word)] 
+            list[list.index(word)] = "" 
     return rems
 
