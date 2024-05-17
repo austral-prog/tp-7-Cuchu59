@@ -24,7 +24,7 @@ def put(word, list):
     if empty_i != -1:
         list[empty_i] = word    
     
-    return [empty_i, list]
+    return empty_i
 
 
 def remove(word, list):
@@ -33,5 +33,5 @@ def remove(word, list):
         if item == word:
             rems += 1
             del list[list.index(word)] 
-    return [rems, list]
+    return rems
 
